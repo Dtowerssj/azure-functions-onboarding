@@ -1,0 +1,26 @@
+
+# Azure Functions artifacts
+bin
+obj
+appsettings.json
+local.settings.json
+
+# Azurite artifacts
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json
+
+# Secrets and private material: never publish
+environment_variables.json
+*.env
+.env*
+secrets*
+*.pfx
+*.pem
+*.key
+*.publishsettings
+others/
+*.zip
+
+# Speaker-only files
+scripts/

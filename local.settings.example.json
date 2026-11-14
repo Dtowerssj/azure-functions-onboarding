@@ -1,0 +1,22 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "powershell",
+    "FUNCTIONS_WORKER_RUNTIME_VERSION": "7.4",
+
+    "TENANT_DOMAIN": "contoso.onmicrosoft.com",
+    "GRAPH_TENANT_ID": "<tenant-id-guid>",
+    "GRAPH_CLIENT_ID": "<app-registration-client-id>",
+    "GRAPH_CLIENT_SECRET": "<client-secret>",
+
+    "CREDENTIAL_TYPE": "password",
+    "TAP_LIFETIME_MINUTES": "480",
+    "USAGE_LOCATION": "US",
+
+    "ITFLOW_BASE_URL": "",
+    "ITFLOW_API_KEY": "",
+    "ITFLOW_DECRYPT_PASSWORD": "",
+    "ITFLOW_CLIENT_ID": ""
+  }
+}
