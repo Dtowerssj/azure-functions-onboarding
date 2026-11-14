@@ -52,7 +52,9 @@ try {
     $graphHeaders = @{ Authorization = "Bearer $token" }
 
     # 2. Build the UPN and a temporary password
-    $nick = ("$first.$last").ToLower() -replace '[^a-z0-9.]', ''
+    # José García-Núñez -> jose.garcianunez (drop accents first, then anything not a-z 0-9 .)
+    $nick = ("$first.$last").Normalize([Text.NormalizationForm]::FormD) -replace '\p{Mn}', ''
+    $nick = $nick.ToLower() -replace '[^a-z0-9.]', ''
     $upn  = "$nick@$($env:TENANT_DOMAIN)"
 
     $upper = 'ABCDEFGHJKLMNPQRSTUVWXYZ'; $lower = 'abcdefghijkmnopqrstuvwxyz'
